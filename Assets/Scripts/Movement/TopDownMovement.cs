@@ -9,7 +9,10 @@ public class TopDownMovement : MonoBehaviour
     public float moveSpeed;
     public Rigidbody2D playerRigid;
     public SpriteRenderer playerSprite;
+    Animator animator;
     public Vector2 moveInput;
+
+    public bool isRunning = false;
 
     #endregion
 
@@ -20,6 +23,7 @@ public class TopDownMovement : MonoBehaviour
     {
         if (playerRigid == null) // Gets Rigidbody of player automatically
         {
+            animator = GetComponent<Animator>();
             playerSprite = GetComponent<SpriteRenderer>();
             playerRigid = GetComponent<Rigidbody2D>();
         }
@@ -28,7 +32,7 @@ public class TopDownMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        animator.StopPlayback();
         // movement updates
 
         moveInput.x = Input.GetAxisRaw("Horizontal"); // left right
@@ -38,13 +42,25 @@ public class TopDownMovement : MonoBehaviour
 
         playerRigid.velocity = moveInput * moveSpeed; // enabling movement
 
-        if (playerRigid.velocity.x > 0)
+        if (Input.GetKeyDown(KeyCode.W))
         {
-            playerSprite.flipX = false;
+            animator.Play("Slime MOVE");
+            playerSprite.flipY = true;
         }
-        if (playerRigid.velocity.x < 0)
+        else if (Input.GetKeyDown(KeyCode.S))
         {
-            playerSprite.flipX = true;
+            animator.Play("Slime MOVE");
+            playerSprite.flipY = false;
         }
+
+
+
+
+
+
+
+
+
+
     }
 }
