@@ -11,6 +11,7 @@ public class TopDownMovement : MonoBehaviour
     public SpriteRenderer playerSprite;
     Animator animator;
     public Vector2 moveInput;
+    
 
     public bool isRunning = false;
 
@@ -32,7 +33,7 @@ public class TopDownMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        animator.StopPlayback();
+        
         // movement updates
 
         moveInput.x = Input.GetAxisRaw("Horizontal"); // left right
@@ -45,15 +46,23 @@ public class TopDownMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W))
         {
             animator.Play("Slime MOVE");
-            playerSprite.flipY = true;
+            Quaternion changeAngle = new Quaternion(0, 0, 180f, 0);
+            transform.rotation = changeAngle;
+            isRunning = true;
         }
         else if (Input.GetKeyDown(KeyCode.S))
         {
             animator.Play("Slime MOVE");
-            playerSprite.flipY = false;
+            Quaternion changeAngle = new Quaternion(0, 0, 0, 0);
+            transform.rotation = changeAngle;
+            isRunning = true;
         }
 
-
+        if (isRunning == false) // get idle to work***********
+        {
+            animator.Play("Idle");
+        }
+        
 
 
 
