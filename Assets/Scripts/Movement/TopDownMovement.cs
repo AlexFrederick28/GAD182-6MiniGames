@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.UIElements.UxmlAttributeDescription;
+using UnityEngine.U2D;
 
 public class TopDownMovement : MonoBehaviour
 {
@@ -11,9 +13,11 @@ public class TopDownMovement : MonoBehaviour
     public SpriteRenderer playerSprite;
     Animator animator;
     public Vector2 moveInput;
-    
+
 
     public bool isRunning = false;
+    
+
 
     #endregion
 
@@ -22,7 +26,7 @@ public class TopDownMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (playerRigid == null) // Gets Rigidbody of player automatically
+        if (playerRigid == null) // Gets Rigidbody/Animator/Sprite of player automatically
         {
             animator = GetComponent<Animator>();
             playerSprite = GetComponent<SpriteRenderer>();
@@ -33,8 +37,8 @@ public class TopDownMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        // movement updates
+        #region Movement
+        // MOVEMENT UPDATES
 
         moveInput.x = Input.GetAxisRaw("Horizontal"); // left right
         moveInput.y = Input.GetAxisRaw("Vertical"); // up down
@@ -43,27 +47,56 @@ public class TopDownMovement : MonoBehaviour
 
         playerRigid.velocity = moveInput * moveSpeed; // enabling movement
 
-        if (Input.GetKeyDown(KeyCode.W))
+
+        // MOVEMENT ANIMATIONS
+
+        if (moveInput.y > 0 && moveInput.x == 0) // Plays Animation and rotates character
         {
+
+            playerRigid.MoveRotation(180);
             animator.Play("Slime MOVE");
-            Quaternion changeAngle = new Quaternion(0, 0, 180f, 0);
-            transform.rotation = changeAngle;
             isRunning = true;
+
         }
-        else if (Input.GetKeyDown(KeyCode.S))
+        if (moveInput.y < 0 && moveInput.x == 0) // Plays Animation and rotates character
         {
+
+            playerRigid.MoveRotation(0);
             animator.Play("Slime MOVE");
-            Quaternion changeAngle = new Quaternion(0, 0, 0, 0);
-            transform.rotation = changeAngle;
             isRunning = true;
+
+        }
+        if (moveInput.y == 0 && moveInput.x > 0) // Plays Animation and rotates character
+        {
+
+            playerRigid.MoveRotation(90);
+            animator.Play("Slime MOVE");
+            isRunning = true;
+
+        }
+        if (moveInput.y == 0 && moveInput.x < 0) // Plays Animation and rotates character
+        {
+
+            playerRigid.MoveRotation(-90);
+            animator.Play("Slime MOVE");
+            isRunning = true;
+
+        }
+        if (moveInput.y == 0 && moveInput.x == 0) // turns off animations when still
+        {
+            isRunning = false;
         }
 
-        if (isRunning == false) // get idle to work***********
+        if (isRunning == false) // Plays Idle Animation
         {
             animator.Play("Idle");
         }
-        
 
+        if (playerRigid.angularVelocity != 0) // stops player from being manipulated by collision of objects
+        {
+            playerRigid.angularVelocity = 0;
+        }
+        #endregion
 
 
 
