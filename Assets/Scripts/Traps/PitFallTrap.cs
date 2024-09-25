@@ -11,6 +11,8 @@ public class PitFallTrap : MonoBehaviour
     public bool trapActive;
 
     public PlayerStats playerStats;
+    public Sprite pitEnabled;
+    public Sprite pitDisabled;
 
     #endregion
 
@@ -29,9 +31,10 @@ public class PitFallTrap : MonoBehaviour
         #region PlayerFall
         if (trapActive == true) // falling into this trap will kill the player
         {
-            
+
             playerStats.transform.position = transform.position;
-            
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = pitEnabled;
+
         }
         if (trapActive == true && playerStats.transform.localScale.x > 0.1) // sets player scale smaller (Looks like falling)
         {

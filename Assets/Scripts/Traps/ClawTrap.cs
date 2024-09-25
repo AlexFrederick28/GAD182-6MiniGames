@@ -9,10 +9,12 @@ public class ClawTrap : MonoBehaviour
 
     #region Variables
 
-    public float clawDamage = 50;
+    public float clawDamage = 25;
     public bool trapActive;
 
     public PlayerStats playerStats;
+    public Sprite clawEnabled;
+    public Sprite clawDisabled;
 
 
     #endregion
@@ -20,8 +22,9 @@ public class ClawTrap : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (playerStats == null) // grabs player script automatically
+        if (playerStats == null) // grabs components automatically
         {
+            
             playerStats = FindAnyObjectByType<PlayerStats>();
         }
     }
@@ -32,10 +35,14 @@ public class ClawTrap : MonoBehaviour
         if (trapActive == true) // keeps hold of player
         {
             playerStats.transform.position = transform.position;
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = clawEnabled;
+            this.gameObject.GetComponent<SpriteRenderer>().sortingOrder = 3;
         }
         if (trapActive == true && Input.GetKeyDown(KeyCode.Mouse0)) // lets go of player (Should put UI for struggle telling player to escape)
         {
             trapActive = false;
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = clawDisabled;
+            this.gameObject.GetComponent<SpriteRenderer>().sortingOrder = 2;
         }
 
         // IDEA - Trap does less damage, although occurs everytime the player struggles. Struggling to get out will be chance based.
