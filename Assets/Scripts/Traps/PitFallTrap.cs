@@ -9,10 +9,12 @@ public class PitFallTrap : MonoBehaviour
     public float pitFallDamage = 100;
     public float transitionSpeed = 0.001f;
     public bool trapActive;
+    public bool smallPlayer = false;
 
     public PlayerStats playerStats;
     public Sprite pitEnabled;
     public Sprite pitDisabled;
+    public RespawnPoint spawnPoint;
 
     #endregion
 
@@ -21,6 +23,7 @@ public class PitFallTrap : MonoBehaviour
     {
         if (playerStats == null) // grabs player script automatically
         {
+            spawnPoint = FindAnyObjectByType<RespawnPoint>();
             playerStats = FindAnyObjectByType<PlayerStats>();
         }
     }
@@ -44,11 +47,28 @@ public class PitFallTrap : MonoBehaviour
             playerStats.transform.localScale -= fallingScale * transitionSpeed * Time.deltaTime;
 
         }
-        if (trapActive == true && playerStats.transform.localScale.x == 0.1) // makes sure player doesnt get too small and hits a bottom
+        if (trapActive == true && playerStats.transform.localScale.x < 0.1) // makes sure player doesnt get too small and hits a bottom
         {
+
+            Debug.Log("Player is at bottom");
+
             Vector3 atBottom = new Vector3(0.1f, 0.1f, 0);
 
             playerStats.transform.localScale = atBottom;
+
+            smallPlayer = true;
+            trapActive = false;
+        }
+        if (trapActive == false && smallPlayer == true) // resets player and moves them to respawn point
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = pitDisabled;
+            Debug.Log("Player should be at respawn");
+            playerStats.transform.position = spawnPoint.transform.position;
+
+            Vector3 normalSize = new Vector3(0.3f, 0.3f, 0);
+            playerStats.transform.localScale = normalSize;
+
+            smallPlayer = false;
         }
         #endregion
     }
