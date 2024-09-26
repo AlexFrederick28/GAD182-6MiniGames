@@ -10,6 +10,7 @@ public class PlayerStats : MonoBehaviour
     #region Variables
 
     public float playerHealth = 100; // player health value
+    public bool needsRevive = false;
 
     public float Health // restrictions for player health value
     {
@@ -41,9 +42,16 @@ public class PlayerStats : MonoBehaviour
         Debug.Log("Player Stats Active");
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (playerHealth == 0)
+        {
+            needsRevive = true;
+        }
+        if (playerHealth != 0)
+        {
+            needsRevive = false;
+        }
     }
+
 }

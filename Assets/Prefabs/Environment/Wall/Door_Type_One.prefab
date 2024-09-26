@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2004174531594008988}
   - component: {fileID: 3225937126218462332}
   - component: {fileID: -6677951365795678052}
+  - component: {fileID: 1858891314187320253}
   m_Layer: 0
   m_Name: Door_Type_One
   m_TagString: Wall
@@ -30,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.814, y: 0.64, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.15, y: 1.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -189,3 +190,17 @@ MonoBehaviour:
   m_LocalBounds:
     m_Center: {x: -0.00000011920929, y: 0.000000014901161, z: 0}
     m_Extent: {x: 1.0249999, y: 0.21500002, z: 0}
+--- !u!114 &1858891314187320253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4606860290386564999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 796c0252cfb0544469ef26a0d1b6b4f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openDoor: 0
+  activatedSwitches: 0
