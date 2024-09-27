@@ -9,6 +9,7 @@ public class CameraFollow : MonoBehaviour
 
     public float moveSpeed;
     public float cameraFar;
+    public float respawnDistance;
 
     private void Start()
     {
@@ -29,15 +30,19 @@ public class CameraFollow : MonoBehaviour
             transform.position += cameraPosition * moveSpeed * Time.deltaTime;
 
         }
+       
+        if (cameraPosition.magnitude > 4)
+        {
+            cameraPosition = cameraPosition.normalized;
+            transform.position += cameraPosition * respawnDistance * Time.deltaTime;
+        }
+
         if (cameraPosition.magnitude > 1)
         {
             cameraPosition = cameraPosition.normalized;
             transform.position += cameraPosition * cameraFar * Time.deltaTime;
 
         }
-
-
-
 
 
 
