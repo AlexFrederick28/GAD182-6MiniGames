@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ClawTrap : MonoBehaviour
@@ -15,7 +16,7 @@ public class ClawTrap : MonoBehaviour
     public PlayerStats playerStats;
     public Sprite clawEnabled;
     public Sprite clawDisabled;
-
+    public TextMeshPro clawTutorial;
 
     #endregion
 
@@ -24,7 +25,7 @@ public class ClawTrap : MonoBehaviour
     {
         if (playerStats == null) // grabs components automatically
         {
-            
+            clawTutorial = GameObject.FindGameObjectWithTag("ClawTutorial").GetComponent<TextMeshPro>();
             playerStats = FindAnyObjectByType<PlayerStats>();
         }
     }
@@ -34,12 +35,15 @@ public class ClawTrap : MonoBehaviour
     {
         if (trapActive == true) // keeps hold of player
         {
+            clawTutorial.text = "Left Click to Escape!";
+
             playerStats.transform.position = transform.position;
             this.gameObject.GetComponent<SpriteRenderer>().sprite = clawEnabled;
             this.gameObject.GetComponent<SpriteRenderer>().sortingOrder = 3;
         }
         if (trapActive == true && Input.GetKeyDown(KeyCode.Mouse0)) // lets go of player (Should put UI for struggle telling player to escape)
         {
+            clawTutorial.text = null;
             trapActive = false;
             this.gameObject.GetComponent<SpriteRenderer>().sprite = clawDisabled;
             this.gameObject.GetComponent<SpriteRenderer>().sortingOrder = 2;
