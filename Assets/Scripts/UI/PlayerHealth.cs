@@ -6,8 +6,8 @@ using TMPro;
 public class PlayerHealth : MonoBehaviour
 {
 
-    public TextMeshPro playerHealth;
-    public TextMeshPro switchesTotal;
+    //public TextMeshPro playerHealth;
+    //public TextMeshPro switchesTotal;
 
     public PlayerStats playerStats;
     public EscapeDoor switchCount;
@@ -22,10 +22,12 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        switchesTotal.text = switchCount.activatedSwitches + " / 4";
-        playerHealth.text = "HP = " + playerStats.playerHealth;
-    }
 }
+
+    // Update is called once per frame
+//    void Update()
+//    {
+//        switchesTotal.text = switchCount.activatedSwitches + " / 4";
+//        playerHealth.text = "HP = " + playerStats.playerHealth;
+//    }
+//}

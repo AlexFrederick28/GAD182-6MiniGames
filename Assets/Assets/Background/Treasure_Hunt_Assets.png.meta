@@ -1,0 +1,630 @@
+fileFormatVersion: 2
+guid: a884deabaffad4c41bd57be5a36f0847
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_1
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 728
+        width: 337
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ca833232bfef8499c78c5896b0e052
+      internalID: -403988479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_2
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 521
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 290cde3a307a4304abc04e5820867796
+      internalID: 1047570209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_3
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 686
+        width: 124
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab8066cd558bed340a5a5843c53f8f00
+      internalID: 1843248067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_4
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 688
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f95d90594a57c418f6f18474141c19
+      internalID: -77684560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_6
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 638
+        width: 266
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4fce03b77ad8d7408e670a694a2e0f3
+      internalID: 2022373044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_7
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 539
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709163e08b2b66543b0aea05cf52e062
+      internalID: -796795048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_8
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 541
+        width: 124
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3296de62e729048a39271509bca08d
+      internalID: -124672523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_10
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 422
+        width: 234
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba1363d098cfa74696b8372d0da8e96
+      internalID: -1786379234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_12
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 454
+        width: 169
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4cce339ee194dc4f8cd7b172976b73e
+      internalID: -1588076248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_15
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 362
+        width: 151
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38dc3663323a2c34aa216d57109dc93c
+      internalID: -392600313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_17
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 377
+        width: 129
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff4aa48036c59df448342746638fb7b9
+      internalID: -1098500494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_18
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 350
+        width: 149
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc6a898e47642a46841ecb6cf4310e6
+      internalID: 1008662888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_23
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 275
+        width: 139
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b5bd37ed0a161b49b619c5e2e85f2e0
+      internalID: -1522278945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_25
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 5
+        width: 524
+        height: 261
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c29fd057fb3f9e4ea00c6c1d4a646e6
+      internalID: -2070067225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_26
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 34
+        width: 124
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80f84b1f2c9f4d4bb502352a2a2ae7c
+      internalID: 621707670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_28
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 191
+        width: 126
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f714d2ec65e5adc4e97b56d48d610bf0
+      internalID: -768580821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_30
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 227
+        width: 103
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3633f49d517b246b2339e754391bfd
+      internalID: 1989817265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_31
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 103
+        width: 99
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e87e8c425916e844ba68e18f24e7bd7
+      internalID: 915588919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_32
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 35
+        width: 125
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9c30f03ba0e824baf5633fb7343a0e
+      internalID: -2045315228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_24
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 267
+        width: 83
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a2f853edd495d42847562d1d9f3c20
+      internalID: -1790401636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_27
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 183
+        width: 122
+        height: 123
+      alignment: 9
+      pivot: {x: 0.46988308, y: 0.53164697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9facce7cf468b349ad949489550e583
+      internalID: -1884468740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_5
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 688
+        width: 122
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea2c383daf7e524199912b776b5275c
+      internalID: 589004584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Hunt_Assets_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 233
+        width: 92
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abeacc51c44a8bd48bd2a9a36486065d
+      internalID: -721774528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Treasure_Hunt_Assets_0: -721774528
+      Treasure_Hunt_Assets_1: -403988479
+      Treasure_Hunt_Assets_10: -1786379234
+      Treasure_Hunt_Assets_11: -430426703
+      Treasure_Hunt_Assets_12: -1588076248
+      Treasure_Hunt_Assets_13: -1610638500
+      Treasure_Hunt_Assets_14: 2084227656
+      Treasure_Hunt_Assets_15: -392600313
+      Treasure_Hunt_Assets_16: -302073309
+      Treasure_Hunt_Assets_17: -1098500494
+      Treasure_Hunt_Assets_18: 1008662888
+      Treasure_Hunt_Assets_19: -1012515170
+      Treasure_Hunt_Assets_2: 1047570209
+      Treasure_Hunt_Assets_20: 1402072977
+      Treasure_Hunt_Assets_21: 1375140177
+      Treasure_Hunt_Assets_22: 62046589
+      Treasure_Hunt_Assets_23: -1522278945
+      Treasure_Hunt_Assets_24: -1790401636
+      Treasure_Hunt_Assets_25: -2070067225
+      Treasure_Hunt_Assets_26: 621707670
+      Treasure_Hunt_Assets_27: -1884468740
+      Treasure_Hunt_Assets_28: -768580821
+      Treasure_Hunt_Assets_29: 554896749
+      Treasure_Hunt_Assets_3: 1843248067
+      Treasure_Hunt_Assets_30: 1989817265
+      Treasure_Hunt_Assets_31: 915588919
+      Treasure_Hunt_Assets_32: -2045315228
+      Treasure_Hunt_Assets_4: -77684560
+      Treasure_Hunt_Assets_5: 589004584
+      Treasure_Hunt_Assets_6: 2022373044
+      Treasure_Hunt_Assets_7: -796795048
+      Treasure_Hunt_Assets_8: -124672523
+      Treasure_Hunt_Assets_9: -246988302
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
