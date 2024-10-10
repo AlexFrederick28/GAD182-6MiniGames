@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -7,7 +8,7 @@ public class BushSearch : MonoBehaviour
 {
     public Animator bushAnimation;
 
-    private SpriteRenderer bushRenderActive;
+    [SerializeField] private TextMeshPro textSearch;
 
     [SerializeField] private bool startSearch = false;
     [SerializeField] private bool isPressingSearch = false;
@@ -22,7 +23,7 @@ public class BushSearch : MonoBehaviour
             bushAnimation = GetComponent<Animator>();
         }
 
-
+        
     }
 
     // Update is called once per frame
@@ -33,16 +34,20 @@ public class BushSearch : MonoBehaviour
         {
             isPressingSearch = true;
         }
-
-        if (startSearch == false)
+        if (Input.GetKeyUp(KeyCode.E))
         {
-            bushAnimation.Play("Idle");
+            isPressingSearch = false;
         }
 
-        if (isPressingSearch == true)
+
+        if (startSearch == true && isPressingSearch == true)
         {
-            bushAnimation.Play("Large Pine Animation");
+            bushAnimation.Play("Pine Tree Animation");
+
         }
+        
+
+
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -53,9 +58,25 @@ public class BushSearch : MonoBehaviour
         {
             Debug.Log("start russel animation with " + collision.transform.name);
 
-            
+            textSearch.text = "Press E to Search!";
+
             startSearch = true;
+
         }
 
+    }
+    public void OnTriggerExit2D(Collider2D collision)
+    {
+        Debug.Log("No longer colliding with " + collision.transform.name);
+
+        if (collision.gameObject.GetComponent<TopDownMovement>())
+        {
+            Debug.Log("stop russel animation with " + collision.transform.name);
+
+            textSearch.text = "";
+
+            bushAnimation.Play("Idle");
+            startSearch = false;
+        }
     }
 }
