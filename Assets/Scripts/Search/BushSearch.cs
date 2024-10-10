@@ -18,7 +18,7 @@ public class BushSearch : MonoBehaviour
             bushAnimation = GetComponent<Animator>();
         }
 
-        bushAnimation.StopRecording();
+        
     }
 
     // Update is called once per frame
