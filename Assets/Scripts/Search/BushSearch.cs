@@ -42,7 +42,7 @@ public class BushSearch : MonoBehaviour
 
         if (startSearch == true && isPressingSearch == true)
         {
-            bushAnimation.Play("Pine Tree Animation");
+            bushAnimation.Play("Pine Tree Animation"); // change the "" quotes to be the animation you want to play
 
         }
         
