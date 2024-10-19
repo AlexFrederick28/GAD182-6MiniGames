@@ -12,6 +12,7 @@ public class Tutorials : MonoBehaviour
     public TextMeshPro revivingTutorial;
 
     public PlayerStats playerStats;
+    
 
     #endregion
 

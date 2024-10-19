@@ -1,11 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
-
-public class LargePineTree : MonoBehaviour, ISearchInterface
+public class CherryBush : MonoBehaviour, ISearchInterface
 {
     public Animator bushAnimation; // gets this automatically (Make sure its attached to parent)
     public TextMeshPro searchTutorial; // gets this automatically (Make sure its attached as child)
@@ -54,9 +52,9 @@ public class LargePineTree : MonoBehaviour, ISearchInterface
         }
 
         if (isPressingSearch() == true && inSearchArea == true)
-        { 
-            bushAnimation.Play("Pine Tree Animation"); // Change this to what animation you want to play (Has to be attached in animator) - Make sure it is identical word for word
+        {
+            bushAnimation.Play("Cherry Bush Animation"); // Change this to what animation you want to play (Has to be attached in animator) - Make sure it is identical word for word
         }
-        
+
     }
 }
