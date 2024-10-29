@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5579394670626625428}
   - component: {fileID: 8739216193592998417}
-  - component: {fileID: 6730435117288845019}
+  - component: {fileID: -3122851336661396539}
   - component: {fileID: 6713916627630870149}
   - component: {fileID: 8873932453537691275}
   - component: {fileID: 6666785369580122635}
@@ -54,7 +54,7 @@ MonoBehaviour:
   treasureFound: {fileID: 0}
   inSearchArea: 0
   searchedBush: 0
---- !u!114 &6730435117288845019
+--- !u!114 &-3122851336661396539
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treasureFound: 0
   treasureCollected: 0
-  treasureInBush: 0
+  treasureInBush: 1
   pineTree: {fileID: 0}
   cherryBush: {fileID: 0}
   bush: {fileID: 0}

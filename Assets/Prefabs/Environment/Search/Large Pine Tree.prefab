@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8921142384802739731}
   - component: {fileID: 6512461954217672693}
+  - component: {fileID: 8021707824048503940}
   - component: {fileID: 4840618412739537045}
   - component: {fileID: 3554597556126262835}
   - component: {fileID: 5026584837302081258}
@@ -50,7 +51,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bushAnimation: {fileID: 5026584837302081258}
   searchTutorial: {fileID: 0}
+  treasureFound: {fileID: 0}
   inSearchArea: 0
+  searchedBush: 0
+--- !u!114 &8021707824048503940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611340659499510800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54c597e96180d354b872b655c9c718e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treasureFound: 0
+  treasureCollected: 0
+  treasureInBush: 0
+  pineTree: {fileID: 0}
+  cherryBush: {fileID: 0}
+  bush: {fileID: 0}
+  largePineTree: {fileID: 0}
 --- !u!212 &4840618412739537045
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -91,7 +113,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 10
   m_Sprite: {fileID: -1786379234, guid: a884deabaffad4c41bd57be5a36f0847, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

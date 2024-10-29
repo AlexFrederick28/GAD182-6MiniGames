@@ -8,7 +8,11 @@ public class PineTree : MonoBehaviour, ISearchInterface
     public Animator bushAnimation; // gets this automatically (Make sure its attached to parent)
     public TextMeshPro searchTutorial; // gets this automatically (Make sure its attached as child)
 
-    [SerializeField] private bool inSearchArea = false;
+    public TreasureFound treasureFound;
+
+    public bool inSearchArea = false;
+
+    public bool searchedBush = false;
 
     public bool isPressingSearch()
     {
@@ -32,6 +36,7 @@ public class PineTree : MonoBehaviour, ISearchInterface
             searchTutorial.text = "Press E to Search!";
             inSearchArea = true;
         }
+       
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -47,6 +52,7 @@ public class PineTree : MonoBehaviour, ISearchInterface
     {
         if (bushAnimation == null)
         {
+            treasureFound = GetComponent<TreasureFound>();
             searchTutorial = GetComponentInChildren<TextMeshPro>();
             bushAnimation = GetComponent<Animator>();
         }
@@ -54,7 +60,20 @@ public class PineTree : MonoBehaviour, ISearchInterface
         if (isPressingSearch() == true && inSearchArea == true)
         {
             bushAnimation.Play("Pine Tree Animation"); // Change this to what animation you want to play (Has to be attached in animator) - Make sure it is identical word for word
+            searchedBush = true;
+            treasureFound.treasureGathered = true;
         }
+        if (searchedBush == true && treasureFound.treasureCollected == false)
+        {
+            searchTutorial.text = "Nothing Found!";
+            Debug.Log("There is nothing here!");
+        }
+        if (searchedBush == true && treasureFound.treasureCollected == true)
+        {
+            searchTutorial.text = "Gold Found!";
+            Debug.Log("You Found Treasure!");
+        }
+
 
     }
 }
