@@ -11,6 +11,7 @@ public class LargePineTree : MonoBehaviour, ISearchInterface
     public TextMeshPro searchTutorial; // gets this automatically (Make sure its attached as child)
 
     public TreasureFound treasureFound;
+    public PlayerStats playerStats;
 
     public bool inSearchArea = false;
 
@@ -55,13 +56,13 @@ public class LargePineTree : MonoBehaviour, ISearchInterface
     {
         if (treasureFound == null)
         {
-            
+            playerStats = FindObjectOfType<PlayerStats>();
             searchTutorial = GetComponentInChildren<TextMeshPro>();
             bushAnimation = GetComponent<Animator>();
             treasureFound = GetComponent<TreasureFound>();
         }
 
-        if (isPressingSearch() == true && inSearchArea == true)
+        if (isPressingSearch() == true && inSearchArea == true && playerStats.playerHealth != 0)
         {
             bushAnimation.Play("Pine Tree Animation"); // Change this to what animation you want to play (Has to be attached in animator) - Make sure it is identical word for word
             searchedBush = true;

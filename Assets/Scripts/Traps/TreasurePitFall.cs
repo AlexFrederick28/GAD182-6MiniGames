@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PitFallTrap : MonoBehaviour
+public class TreasurePitFall : MonoBehaviour
 {
     #region Variables
 

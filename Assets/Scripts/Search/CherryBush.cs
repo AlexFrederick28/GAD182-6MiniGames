@@ -9,6 +9,7 @@ public class CherryBush : MonoBehaviour, ISearchInterface
     public TextMeshPro searchTutorial; // gets this automatically (Make sure its attached as child)
 
     public TreasureFound treasureFound;
+    public PlayerStats playerStats;
 
     public bool inSearchArea = false;
 
@@ -52,12 +53,13 @@ public class CherryBush : MonoBehaviour, ISearchInterface
     {
         if (bushAnimation == null)
         {
+            playerStats = FindObjectOfType<PlayerStats>();
             treasureFound = GetComponent<TreasureFound>();
             searchTutorial = GetComponentInChildren<TextMeshPro>();
             bushAnimation = GetComponent<Animator>();
         }
 
-        if (isPressingSearch() == true && inSearchArea == true)
+        if (isPressingSearch() == true && inSearchArea == true && playerStats.playerHealth != 0)
         {
             bushAnimation.Play("Cherry Bush Animation"); // Change this to what animation you want to play (Has to be attached in animator) - Make sure it is identical word for word
             searchedBush = true;
