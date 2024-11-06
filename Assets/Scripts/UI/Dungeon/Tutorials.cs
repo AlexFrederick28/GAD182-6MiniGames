@@ -10,6 +10,7 @@ public class Tutorials : MonoBehaviour
     public bool firstTimeShown = false;
 
     public TextMeshPro revivingTutorial;
+    
 
     public PlayerStats playerStats;
     
@@ -21,6 +22,7 @@ public class Tutorials : MonoBehaviour
     {
         if (playerStats == null)
         {
+            
             playerStats = FindObjectOfType<PlayerStats>();
         }
     }
@@ -38,5 +40,7 @@ public class Tutorials : MonoBehaviour
         {
             revivingTutorial.text = null;
         }
+
+       
     }
 }
