@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
@@ -11,6 +12,8 @@ public class PlayerStats : MonoBehaviour
 
     public float playerHealth = 100; // player health value
     public bool needsRevive = false;
+
+    [SerializeField] private Sprite deathUI;
 
     public float Health // restrictions for player health value
     {
@@ -51,6 +54,14 @@ public class PlayerStats : MonoBehaviour
         if (playerHealth != 0)
         {
             needsRevive = false;
+        }
+    }
+
+    private void DamageUI()
+    {
+        if (playerHealth == 0)
+        {
+
         }
     }
 
