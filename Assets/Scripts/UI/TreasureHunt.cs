@@ -11,6 +11,7 @@ public class TreasureHunt : MonoBehaviour
     public PlayerStats playerStats;
     public TreasureFound treasureFound;
 
+    public GameObject damageUI;
     public int allTreasureCount = 0;
 
 
@@ -22,6 +23,8 @@ public class TreasureHunt : MonoBehaviour
         ShowHealth();
 
         AmountTreasure();
+
+        DamageUI();
     }
 
     public void ShowHealth()
@@ -32,6 +35,18 @@ public class TreasureHunt : MonoBehaviour
     public void AmountTreasure()
     {
         treasureAmount.text = allTreasureCount.ToString();
+    }
+
+    public void DamageUI()
+    {
+        if (playerStats.playerHealth == 0)
+        {
+            damageUI.SetActive(true);
+        }
+        if (playerStats.playerHealth != 0)
+        {
+            damageUI.SetActive(false);
+        }
     }
 
     public void GetScripts()

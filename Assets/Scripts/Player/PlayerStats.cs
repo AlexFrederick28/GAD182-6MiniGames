@@ -57,12 +57,6 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    private void DamageUI()
-    {
-        if (playerHealth == 0)
-        {
-
-        }
-    }
+   
 
 }
