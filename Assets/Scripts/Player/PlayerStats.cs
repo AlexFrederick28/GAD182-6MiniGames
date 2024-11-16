@@ -36,7 +36,7 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-
+    
     #endregion
 
     // Start is called before the first frame update
