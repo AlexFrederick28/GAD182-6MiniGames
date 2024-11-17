@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ReviveSound : MonoBehaviour
+public class SoundHand : MonoBehaviour
 {
     [SerializeField] private AudioSource reviveSound;
     [SerializeField] private AudioClip playerReviveAudio;
