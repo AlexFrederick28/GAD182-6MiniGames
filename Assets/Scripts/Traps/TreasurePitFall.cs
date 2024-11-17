@@ -37,7 +37,7 @@ public class TreasurePitFall : MonoBehaviour
 
             playerStats.transform.position = transform.position;
             this.gameObject.GetComponent<SpriteRenderer>().sprite = pitEnabled;
-            
+
         }
         if (trapActive == true && playerStats.transform.localScale.x > 0.1) // sets player scale smaller (Looks like falling)
         {

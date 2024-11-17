@@ -12,7 +12,6 @@ public class Revive : MonoBehaviour
 
     public PlayerStats playerStats; // referencing the player
 
-    public SoundHandler soundHandler;
     #endregion
 
     // Start is called before the first frame update
@@ -20,7 +19,6 @@ public class Revive : MonoBehaviour
     {
         if (playerStats == null) // gets components automatically
         {
-            soundHandler = FindObjectOfType<SoundHandler>();
             lightSource = GetComponentInChildren<Light2D>();
             playerStats = FindObjectOfType<PlayerStats>();
         }
@@ -35,7 +33,6 @@ public class Revive : MonoBehaviour
             {
                 playerStats.playerHealth = 100;
                 lightSource.enabled = false;
-                soundHandler.PlayReviveSound();
             }
         }
     }
