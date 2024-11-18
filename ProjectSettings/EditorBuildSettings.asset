@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DungeonEscape.unity
     guid: ae50ed917e6142644817432f5148c89f
+  - enabled: 1
+    path: Assets/Scenes/TreasureHunt - Copy.unity
+    guid: 7734326d350e79c4c8def28091849723
+  - enabled: 1
+    path: Assets/Scenes/TreasureDungeon.unity
+    guid: fc0c20683c7fa234bb1e77c4abc64ff3
   m_configObjects: {}
