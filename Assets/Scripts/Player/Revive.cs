@@ -34,9 +34,12 @@ public class Revive : MonoBehaviour
         {
             if (playerStats.playerHealth == 0 && lightSource.enabled == enabled)
             {
-                playerStats.playerHealth = 100;
-                lightSource.enabled = false;
                 soundHandler.PlayReviveSound();
+
+                lightSource.enabled = false;
+
+                playerStats.playerHealth = 100;
+
             }
         }
     }

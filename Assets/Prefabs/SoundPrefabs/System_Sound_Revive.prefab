@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3581951091219102370}
-  - component: {fileID: 2022477737240492832}
+  - component: {fileID: 8145710339149589809}
   - component: {fileID: 5395204138390799495}
   m_Layer: 0
   m_Name: System_Sound_Revive
@@ -33,7 +33,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2022477737240492832
+--- !u!114 &8145710339149589809
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,11 +42,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4609207717356859722}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bb988f81d5d4ef408a8e4398f02aaa6, type: 3}
+  m_Script: {fileID: 11500000, guid: 06433c7e4eb102c4caad8a18dcaf1263, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reviveSound: {fileID: 5395204138390799495}
-  playerReviveAudio: {fileID: 8300000, guid: ee8e3d1aa9b24de47a58215015ef3fed, type: 3}
+  reviveSoundPlayer: {fileID: 5395204138390799495}
+  playerReviveSound: {fileID: 8300000, guid: ee8e3d1aa9b24de47a58215015ef3fed, type: 3}
 --- !u!82 &5395204138390799495
 AudioSource:
   m_ObjectHideFlags: 0
