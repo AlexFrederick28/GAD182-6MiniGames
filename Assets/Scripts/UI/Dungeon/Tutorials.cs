@@ -38,7 +38,7 @@ public class Tutorials : MonoBehaviour
         }
         if (firstTimeShown == true && playerStats.playerHealth == 100)
         {
-            revivingTutorial.text = null;
+            revivingTutorial.text = "";
         }
 
        
