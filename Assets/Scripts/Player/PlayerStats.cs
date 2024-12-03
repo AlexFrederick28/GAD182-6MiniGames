@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -11,6 +14,10 @@ public class PlayerStats : MonoBehaviour
 
     public float playerHealth = 100; // player health value
     public bool needsRevive = false;
+
+    [SerializeField] private int deathCounter;
+
+    public TextMeshPro lifeIndicator;
 
     public float Health // restrictions for player health value
     {
@@ -44,13 +51,21 @@ public class PlayerStats : MonoBehaviour
 
     void Update()
     {
-        if (playerHealth == 0)
+
+        lifeIndicator.text = "Lives " + deathCounter + "/5";
+
+        if (playerHealth == 0 && needsRevive == false)
         {
+            deathCounter += 1;
             needsRevive = true;
         }
         if (playerHealth != 0)
         {
             needsRevive = false;
+        }
+        if (deathCounter == 6)
+        {
+            SceneManager.LoadScene(0);
         }
     }
 
