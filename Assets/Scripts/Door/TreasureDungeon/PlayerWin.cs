@@ -14,6 +14,7 @@ public class PlayerWin : MonoBehaviour
 
     public TextMeshPro Gold;
     public TextMeshPro Switches;
+    public TextMeshPro winText;
 
     public void Start()
     {
@@ -32,6 +33,8 @@ public class PlayerWin : MonoBehaviour
 
         if (collectedGold == 3 && EscapeDoor.activatedSwitches == 4)
         {
+            winText.text = "The Door Has Opened!";
+
             winCollider.enabled = true;
         }
     }

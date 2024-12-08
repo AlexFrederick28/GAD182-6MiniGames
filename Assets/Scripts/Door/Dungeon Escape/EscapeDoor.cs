@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class EscapeDoor : MonoBehaviour
@@ -8,6 +9,8 @@ public class EscapeDoor : MonoBehaviour
 
     public bool openDoor = false;
     public int activatedSwitches = 0;
+
+    public TextMeshPro winTextEscape;
 
     public int ActiveSwitches
     {
@@ -43,6 +46,8 @@ public class EscapeDoor : MonoBehaviour
     {
         if (activatedSwitches == 4)
         {
+            winTextEscape.text = "The Door has Opened!";
+
             openDoor = true;
             this.gameObject.SetActive(false);
         }
